@@ -70,6 +70,7 @@ uses BinanceAPI,...;
 ```python
 var BinanceAPI:TBinanceAPI;
     AccountBalance:Real;
+	APIResult:String;
 begin
   BinanceAPI := TBinanceAPI.Create('ApiKey','SecretKey');
   if not BinanceAPI.GetAccountInfo(APIResult) Then
